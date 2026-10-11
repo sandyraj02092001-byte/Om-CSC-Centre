@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6b53">
+  <meta name="description" content="Om CSC Centre, Darbhanga, Bihar — online form assistance, printing, scanning, resume and digital services.">
+  <title>Om CSC Centre | Darbhanga, Bihar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="topline"><div class="container topinner"><span data-en="Darbhanga, Bihar" data-hi="दरभंगा, बिहार">Darbhanga, Bihar</span><span data-en="Mon–Sat • Please call to confirm hours" data-hi="सोम–शनि • समय की पुष्टि के लिए कॉल करें">Mon–Sat • Please call to confirm hours</span></div></div>
+  <header class="container header">
+    <a class="brand" href="#home" aria-label="Om CSC Centre home"><span class="brandmark">ॐ</span><span><strong>Om CSC Centre</strong><small data-en="Digital services • Darbhanga" data-hi="डिजिटल सेवाएँ • दरभंगा">Digital services • Darbhanga</small></span></a>
+    <nav><a href="#services" data-en="Services" data-hi="सेवाएँ">Services</a><a href="#notices" data-en="Notices" data-hi="सूचनाएँ">Notices</a><a href="#request" data-en="Request service" data-hi="सेवा अनुरोध">Request service</a><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a></nav>
+    <button id="languageToggle" class="btn btn-light" type="button" aria-label="Change language">हिंदी</button>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-en="YOUR LOCAL DIGITAL HELP DESK" data-hi="आपका स्थानीय डिजिटल सहायता केंद्र">YOUR LOCAL DIGITAL HELP DESK</span>
+          <h1 data-en="Digital services, made simpler." data-hi="डिजिटल सेवाएँ, अब और आसान।">Digital services, made simpler.</h1>
+          <p data-en="Friendly assistance for online forms, document preparation, printing and everyday digital tasks in Darbhanga." data-hi="दरभंगा में ऑनलाइन फॉर्म, दस्तावेज़ तैयार करने, प्रिंटिंग और रोज़मर्रा के डिजिटल कामों में सहयोग।">Friendly assistance for online forms, document preparation, printing and everyday digital tasks in Darbhanga.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#request" data-en="Request a service" data-hi="सेवा का अनुरोध करें">Request a service</a><a class="btn btn-outline" href="#services" data-en="Explore services" data-hi="सेवाएँ देखें">Explore services</a></div>
+          <p class="small-note" data-en="Independent service centre. Government services are provided only through applicable official portals and authorisations." data-hi="स्वतंत्र सेवा केंद्र। सरकारी सेवाएँ केवल संबंधित आधिकारिक पोर्टल और आवश्यक अनुमति के माध्यम से दी जाती हैं।">Independent service centre. Government services are provided only through applicable official portals and authorisations.</p>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-icon">✦</div><span class="panel-label" data-en="OM CSC CENTRE" data-hi="ओम CSC सेंटर">OM CSC CENTRE</span>
+          <h2 data-en="How can we help you today?" data-hi="आज हम आपकी कैसे मदद कर सकते हैं?">How can we help you today?</h2>
+          <p data-en="Choose a service, send a request, and we’ll contact you to confirm the next steps." data-hi="सेवा चुनें, अनुरोध भेजें और आगे की जानकारी के लिए हम आपसे संपर्क करेंगे।">Choose a service, send a request, and we’ll contact you to confirm the next steps.</p>
+          <div class="quick-points"><span>✓ <span data-en="Clear guidance" data-hi="स्पष्ट मार्गदर्शन">Clear guidance</span></span><span>✓ <span data-en="Local assistance" data-hi="स्थानीय सहायता">Local assistance</span></span><span>✓ <span data-en="Hindi & English" data-hi="हिंदी और अंग्रेज़ी">Hindi & English</span></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="trust-strip"><div class="container trust-grid"><div><strong>01</strong><span data-en="Ask about a service" data-hi="सेवा के बारे में पूछें">Ask about a service</span></div><div><strong>02</strong><span data-en="Share a request" data-hi="अनुरोध भेजें">Share a request</span></div><div><strong>03</strong><span data-en="Confirm details with us" data-hi="हमसे विवरण की पुष्टि करें">Confirm details with us</span></div></div></section>
+    <section id="services" class="section container">
+      <div class="section-heading"><div><span class="eyebrow" data-en="WHAT WE CAN HELP WITH" data-hi="हमारी सेवाएँ">WHAT WE CAN HELP WITH</span><h2 data-en="Services at a glance" data-hi="हमारी प्रमुख सेवाएँ">Services at a glance</h2></div><input id="serviceSearch" class="search" type="search" placeholder="Search services…" aria-label="Search services"></div>
+      <div id="servicesGrid" class="service-grid">
+        <article class="service-card"><span class="service-icon">▤</span><h3>Online form assistance</h3><p>Help filling forms on the relevant official website.</p></article>
+        <article class="service-card"><span class="service-icon">▧</span><h3>Print, scan & photocopy</h3><p>Document printing, scanning and photocopy support.</p></article>
+        <article class="service-card"><span class="service-icon">✎</span><h3>Resume & typing</h3><p>Resume formatting, typing and document preparation.</p></article>
+        <article class="service-card"><span class="service-icon">▣</span><h3>Exam form assistance</h3><p>Guidance for exam applications and checking official notices.</p></article>
+        <article class="service-card"><span class="service-icon">▤</span><h3>Photo & PDF preparation</h3><p>Resize photos and prepare files to meet published requirements.</p></article>
+        <article class="service-card"><span class="service-icon">↗</span><h3>Digital service guidance</h3><p>Help finding official portals and understanding application steps.</p></article>
+      </div>
+      <p class="disclaimer" data-en="Prices and eligibility vary by service. Confirm the current service charge and any official fee before proceeding." data-hi="सेवा के अनुसार शुल्क और पात्रता अलग-अलग हो सकती है। आगे बढ़ने से पहले वर्तमान सेवा शुल्क और आधिकारिक शुल्क की पुष्टि करें।">Prices and eligibility vary by service. Confirm the current service charge and any official fee before proceeding.</p>
+    </section>
+    <section id="notices" class="section section-muted">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow" data-en="LATEST UPDATES" data-hi="नवीनतम अपडेट">LATEST UPDATES</span><h2 data-en="Notices & useful links" data-hi="सूचनाएँ और उपयोगी लिंक">Notices & useful links</h2></div></div>
+        <div id="noticesList" class="notice-list"><div class="notice"><span class="notice-date">INFO</span><div><h3 data-en="Check official notifications" data-hi="आधिकारिक सूचनाएँ देखें">Check official notifications</h3><p data-en="Always verify application dates and eligibility on the official portal." data-hi="आवेदन की तिथि और पात्रता हमेशा आधिकारिक पोर्टल पर जाँचें।">Always verify application dates and eligibility on the official portal.</p></div></div></div>
+        <div class="official-links"><a href="https://serviceonline.bihar.gov.in/" target="_blank" rel="noopener">Bihar RTPS / ServicePlus ↗</a><a href="https://www.india.gov.in/" target="_blank" rel="noopener">National Portal of India ↗</a><a href="https://www.uidai.gov.in/" target="_blank" rel="noopener">UIDAI official website ↗</a></div>
+      </div>
+    </section>
+    <section id="request" class="section container">
+      <div class="request-layout">
+        <div><span class="eyebrow" data-en="START HERE" data-hi="यहाँ से शुरू करें">START HERE</span><h2 data-en="Request a service" data-hi="सेवा का अनुरोध करें">Request a service</h2><p data-en="Send a basic enquiry. We’ll contact you to confirm availability, documents and charges." data-hi="अपनी सामान्य पूछताछ भेजें। उपलब्धता, दस्तावेज़ और शुल्क की पुष्टि के लिए हम आपसे संपर्क करेंगे।">Send a basic enquiry. We’ll contact you to confirm availability, documents and charges.</p><div class="privacy-note"><strong data-en="Protect your information" data-hi="अपनी जानकारी सुरक्षित रखें">Protect your information</strong><p data-en="Do not submit Aadhaar numbers, OTPs, passwords, bank details or identity-document scans in this form." data-hi="इस फॉर्म में आधार नंबर, OTP, पासवर्ड, बैंक विवरण या पहचान-पत्र की स्कैन कॉपी न भेजें।">Do not submit Aadhaar numbers, OTPs, passwords, bank details or identity-document scans in this form.</p></div></div>
+        <form id="requestForm" class="request-form">
+          <label><span data-en="Your name" data-hi="आपका नाम">Your name</span><input name="name" required maxlength="80" autocomplete="name" placeholder="Full name"></label>
+          <label><span data-en="Mobile number" data-hi="मोबाइल नंबर">Mobile number</span><input name="phone" required inputmode="tel" pattern="[0-9+() -]{8,20}" maxlength="20" autocomplete="tel" placeholder="Phone number"></label>
+          <label><span data-en="Service needed" data-hi="आवश्यक सेवा">Service needed</span><select name="service" required><option value="">Choose a service</option><option>Online form assistance</option><option>Print, scan & photocopy</option><option>Resume & typing</option><option>Exam form assistance</option><option>Photo & PDF preparation</option><option>Digital service guidance</option><option>Other</option></select></label>
+          <label><span data-en="Preferred visit date (optional)" data-hi="आने की पसंदीदा तारीख (वैकल्पिक)">Preferred visit date (optional)</span><input name="visit_date" type="date"></label>
+          <label class="full"><span data-en="Message (optional — no sensitive data)" data-hi="संदेश (वैकल्पिक — संवेदनशील जानकारी न लिखें)">Message (optional — no sensitive data)</span><textarea name="message" rows="3" maxlength="500" placeholder="Tell us what help you need"></textarea></label>
+          <label class="consent full"><input type="checkbox" required><span data-en="I agree that the centre may contact me about this request." data-hi="मैं सहमत हूँ कि केंद्र इस अनुरोध के बारे में मुझसे संपर्क कर सकता है।">I agree that the centre may contact me about this request.</span></label>
+          <button class="btn btn-primary full" type="submit" data-en="Send request" data-hi="अनुरोध भेजें">Send request</button>
+          <p id="formMessage" class="form-message full" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <section id="contact" class="contact-band"><div class="container contact-inner"><div><span class="eyebrow" data-en="VISIT OR CONTACT US" data-hi="हमसे मिलें या संपर्क करें">VISIT OR CONTACT US</span><h2>Om CSC Centre</h2><p data-en="Darbhanga, Bihar, India" data-hi="दरभंगा, बिहार, भारत">Darbhanga, Bihar, India</p><p data-en="Add your verified phone number and full shop address in app.js before publishing." data-hi="प्रकाशित करने से पहले app.js में अपना सही फोन नंबर और दुकान का पूरा पता जोड़ें।">Add your verified phone number and full shop address in app.js before publishing.</p></div><div class="contact-actions"><a id="callLink" class="btn btn-white" href="#request" data-en="Call centre" data-hi="केंद्र को कॉल करें">Call centre</a><a id="whatsappLink" class="btn btn-outline-white" href="#request" target="_blank" rel="noopener" data-en="WhatsApp us" data-hi="WhatsApp करें">WhatsApp us</a></div></div></section>
+  </main>
+  <footer class="container footer"><span>© <span id="year"></span> Om CSC Centre</span><span data-en="Independent local service centre • Not an official government website" data-hi="स्वतंत्र स्थानीय सेवा केंद्र • यह आधिकारिक सरकारी वेबसाइट नहीं है">Independent local service centre • Not an official government website</span><a href="#admin" id="adminOpen">Admin</a></footer>
+  <section id="admin" class="admin-section container" hidden>
+    <div class="admin-card"><div class="section-heading"><div><span class="eyebrow">CENTRE MANAGEMENT</span><h2>Admin dashboard</h2></div><button id="adminClose" class="btn btn-light" type="button">Close</button></div>
+      <div id="adminLoginArea"><p>Sign in using the admin account you create in Supabase Authentication. Public visitors cannot access private requests.</p><form id="loginForm" class="admin-login"><label>Email<input type="email" name="email" required autocomplete="username"></label><label>Password<input type="password" name="password" required autocomplete="current-password"></label><button class="btn btn-primary" type="submit">Sign in</button></form><p id="loginMessage" class="form-message" role="status"></p></div>
+      <div id="adminPanel" hidden><div class="admin-toolbar"><p id="adminWho"></p><button id="logoutButton" class="btn btn-light" type="button">Sign out</button></div>
+        <h3>Service requests</h3><div id="adminRequests" class="admin-table-wrap">Sign in to load requests.</div>
+        <h3>Publish a notice</h3><form id="noticeForm" class="notice-form"><label>Title<input name="title" required maxlength="150"></label><label>Details<textarea name="body" rows="3" required maxlength="1500"></textarea></label><label>Public link (optional)<input name="url" type="url" placeholder="https://..."></label><button class="btn btn-primary" type="submit">Publish notice</button></form><p id="noticeMessage" class="form-message" role="status"></p>
+        <h3>Current notices</h3><div id="adminNotices"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
